@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>George K. Ferguson Jr. - Portfolio</title>
+    <link rel="stylesheet" href="stylee.css">
+
+    <body>
+        <header>
+            <div class="container header-container">
+                <img src="img/logo.png" alt="Profile Picture" class="profile-img">
+                <nav>
+                    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">&#9776;</button>
+                    <ul id="navbar">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><button id="themeToggle">🌙</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Home/Banner -->
+            <section id="home" class="banner">
+                <div>
+                    <h1>George K. Ferguson Jr.</h1>
+                    <h2>Full-Stack Developer</h2>
+                    <p class="tagline">Building modern, performant, and beautiful web experiences.</p>
+                </div>
+            </section>
+
+            <!-- About Me -->
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="img/myself.jpg" alt="George Ferguson" class="about-img">
+                    <p>
+                        I'm a passionate developer specializing in the MERN stack and front-end technologies.<br> I love clean, modular code and continuous learning.<br> I'm seeking opportunities to contribute to innovative teams and projects.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">HTML5 & CSS3</div>
+                    <div class="skill-card">JavaScript (ES6+)</div>
+                    <div class="skill-card">React.js</div>
+                    <div class="skill-card">Node.js</div>
+                    <div class="skill-card">Git & GitHub</div>
+                    <div class="skill-card">Responsive Design</div>
+                </div>
+            </section>
+
+            <!-- Projects/Portfolio -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <img src="img/ecommerce.png" alt="Project One Screenshot">
+                        <h3>Modern E-Commerce Site</h3>
+                        <p>A fully responsive e-commerce demo built with HTML, CSS Grid, and vanilla JS.</p>
+                        <a href="life-demo.html" class="btn">Read More</a>
+                    </div>
+                    <div class="project-card fade-in">
+                        <img src="img/pblog.jpg" alt="Project Two Screenshot">
+                        <h3>Personal Blog</h3>
+                        <p>A sleek blog page using ES6 modules and SPA routing.</p>
+                        <a href="readmore.html" class="btn">Read More</a>
+                    </div>
+                    <div class="project-card fade-in">
+                        <img src="img/vidblog.png" alt="Project Three Screenshot">
+                        <h3>Video Website</h3>
+                        <p>A browser-based video website for entertainment.</p>
+                        <a href="readmorevidlog.html" class="btn">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Me -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contactForm" novalidate>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <span class="form-error" id="nameError"></span>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <span class="form-error" id="emailError"></span>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" resrequired></textarea>
+                    <span class="form-error" id="messageError"></span>
+                    <button type="submit" class="btn">Send</button>
+                    <span id="formSuccess"></span>
+                </form>
+            </section>
+
+            <button id="toTopBtn" title="Scroll to top">&#8679;</button>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 George K. Ferguson Jr. · Web Developer</p>
+                <div>
+                    <a href="mailto:gf30852@gmail.com">Email</a>
+                    <a href="https://github.com/ankuch12" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ankuch12" target="_blank">LinkedIn</a>
+                </div>
+                <small>Designed & built with ♥ using HTML, CSS, JS.</small>
+            </div>
+        </footer>
+        <script src="george.js"></script>
+    </body>
+
+</html>
